@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    max-height: 15vh;
+    display: flex;  
+    justify-content: right;
+    width: 100%;
+    margin-bottom: 1%;
+}
+header a{
+    margin-top: 2%;
+}
+header img{
+    width: 20%;
+    margin-top: -1%;
+}
+header .right{
+    margin-right: 4%;
+    font-size: 14px;
+    margin-left: 18%;
+    margin-top: 2.5%;
+    text-decoration: none;
+    color: blue;
+    font-family: Cambria;
+}
+main{
+    height: 120vh;
+    width: 100%;
+    background-image: url(images/background.jpeg);
+    background-size: cover;
+}
+main div{
+    background-color: white;
+    width: 350px;
+    height: 83vh;
+    margin-top: 5px;
+    margin-right: 8%;
+    float: right;
+    padding: 15px;
+    text-align: center;
+    font-family: Cambria;
+}
+main div img{
+    width: 40%;   
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+main div h1{
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+main div p{
+    font-size: 18px;
+    margin-top: 0;
+}
+main div input{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    margin-top: 20%;
+    margin-bottom: 30px;
+    color: grey;
+    font-size: 14px;
+}
+main div button{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 10px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+main div button.blue{
+    background-color: blue;
+    color: white;
+}
+main div a{
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin-top: 20px;
+}
+main div #create-account{
+    margin-top: 25%;
+}

@@ -23,6 +23,7 @@ header ul li{
     margin-right: 20px;
     padding: 10px;
     font-size: 18px;
+    color: black;
 }
 header ul li.active{
     height: 10%;
@@ -151,9 +152,11 @@ footer ul li a{
 }
 footer ul li.right{
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 350px;
     margin-right: 100px;
+    color: rgb(116, 115, 115);
+    cursor: pointer;
 }
 
 
