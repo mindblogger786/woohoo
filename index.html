@@ -30,9 +30,13 @@
         <div class="container">
             <div id="greeting"></div>
             <div class="date">Today is&nbsp;<span id="date"></span></div>
-            <form>
-                <input type="text" placeholder="Search the web">
-            </form>
+            <div class="search-box">
+                <div class="search-bar">
+                    <button class="search-btn" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search the web" onkeydown="handleEnterKey(event)">
+                    <button class="mic-btn" onclick="startSpeechRecognition()"><i class="fa-solid fa-microphone"></i></button>
+                </div>
+            </div>
             <div class="news-links">
                 <ul>
                     <li><a href="https://in.search.yahoo.com/search;_ylt=AwrPpHO_XI1lZ0g8Uzi6HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3F1aWNrbGlua3M-?ei=UTF-8&fr=sfp-fba&fr2=p%3As%2Cv%3Asfp%2Cm%3Afeaturebar&p=Latest+Cricket+news"><i class="fa-solid fa-baseball-bat-ball"></i>&nbsp;  Cricket</a></li>

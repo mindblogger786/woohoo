@@ -100,18 +100,57 @@ main .container #greeting{
 }
 main .container .date{
     font-size: 14px;
-}
-main .container input{
-    width: 45%;
-    height: 20px;
-    padding: 15px;
-    padding-left: 50px;
-    border-radius: 25px;
-    outline: none;
-    border: 1px solid rgb(230, 230, 230);
     margin-bottom: 25px;
+}
+main .container .search-box{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+main .container .search-box .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 50%;
+    height: 50px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.1);
+}
+main .container .search-box .search-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 18px;
+}
+main .container .search-box .search-btn, .mic-btn {
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+main .container .search-box .search-btn{
+    margin-left: 10px;
+}
+main .container .search-box .mic-btn {
+    border-left: 1px solid #ccc;
     font-size: 20px;
-    box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
+    color: rgb(0, 162, 255);
+    margin-right: 15px;
+    padding-left: 15px;
+}
+main .container .search-box .mic-btn:hover{
+    color: rgb(17, 121, 182);
 }
 main .container .news-links ul{
     list-style: none;
@@ -135,7 +174,7 @@ main .container .news-links ul li:hover{
     background-color: rgba(34, 231, 231, 0.1);
     cursor: pointer;
 }
-main .container .news-links ul li a:hover{
+main .container .news-links ul li:hover a{
     color: rgb(17, 150, 211);
 }
 main .container .box-links{
@@ -173,6 +212,7 @@ main .container .box-links ol li a{
     text-decoration: none;
     font-weight: 200;
     padding-left: 5px;
+    color: blue;
 }
 footer{
     padding: 20px;

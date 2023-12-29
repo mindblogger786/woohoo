@@ -65,3 +65,35 @@ function printCurrentDateAndMonth() {
 
 // Call the function to print the current date and month
 printCurrentDateAndMonth();
+
+// Speech Recognition
+let recognition;
+
+  function startSpeechRecognition() {
+    recognition = new window.webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    
+    recognition.onresult = function(event) {
+      const transcript = event.results[0][0].transcript;
+      document.getElementById('searchInput').value = transcript;
+    };
+
+    recognition.onend = function() {
+      recognition.stop();
+    };
+
+    recognition.start();
+  }
+
+  function search() {
+    const query = document.getElementById('searchInput').value;
+    const googleSearchURL = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+    window.location.href = googleSearchURL;
+  }
+
+  function handleEnterKey(event) {
+    if (event.key === 'Enter') {
+      search();
+    }
+  }
